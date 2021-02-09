@@ -134,7 +134,7 @@ class ModifiedPlayfair:
     
     
     def printDecryptedText(self):
-        print("Decrypted Text:", self.decrypted_text)
+        print("Decrypted Text:", self.decrypted_text)    
     
 if __name__ == "__main__":
     

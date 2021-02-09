@@ -5,24 +5,25 @@ Created on Mon Feb  8 19:23:44 2021
 @author: Piyush
 """
 # Step 1: To be run by receiver.
-from Crypto import Random
+from Crypto.Cipher import PKCS1_OAEP
 from Crypto.PublicKey import RSA
 
 def generate_keys():
    # key length must be a multiple of 256 and >= 1024
-   modulus_length = 256*4
    key = RSA.generate(1024)
    publickey = key.publickey()
-   return publickey.exportKey('PEM')
+   return key.exportKey('PEM'), publickey.exportKey('PEM')
 
 
-publickey = generate_keys()
-f = open('pkey.pem', 'wb')
-f.write(publickey)
+privatekey, publickey = generate_keys()
+
 # print(type(publickey))
-print(publickey)
-pobj = RSA.importKey(publickey)
-print(pobj.encrypt("Hello", 12))
+
+print("Public Key: ", publickey)
+
+print("\n\nPrivate Key: ", privatekey)
+
+
 
 
 
