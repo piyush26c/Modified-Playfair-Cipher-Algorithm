@@ -2,12 +2,8 @@
    <body>
       <form action = "accept_receiver_data" method = "POST" enctype = "multipart/form-data">
          
-         <!-- Cipher text obtained from sender -->
-         <input type="text" name="ciphertext" placeholder="Enter the CipherText" >
-         <br>
-
          <!-- Receiver's private key for RSA -->         
-         <input type="text" name="receiver_privatekey" placeholder="Enter the Receiver's PrivateKey" >
+         <input type="text" name="receiver_privatekey" placeholder="Enter the Receiver's PrivateKey (without b & quotes)" >
          <br>
          
          <!-- Upload encrypted image for steganography -->
@@ -15,7 +11,7 @@
          <input type = "file" name = "encrypted_image" />
          <br>
       
-         <input type = "submit" value="SUBMIT" />
+         <input type = "submit" value="DECRYPT" />
          <br>
 
       </form>
