@@ -115,6 +115,9 @@ class ModifiedPlayfair:
     def printCipherText(self):
         print("Cipher Text:", self.cipher_text)
     
+    def setCipherText(self,paramciphertext):
+        self.cipher_text = paramciphertext
+
     def getCipherText(self):
         return self.cipher_text
     
@@ -133,6 +136,7 @@ class ModifiedPlayfair:
                 self.decrypted_text += self.keyTable[x2][y1]
                 
         self.decrypted_text = self.decrypted_text.replace('^','')
+        return self.decrypted_text
     
     
     def printDecryptedText(self):
