@@ -6,7 +6,7 @@
 We a team of 4 developed a novel Cryptographic method wherein we leveraged
 the [Traditional Playfair cipher](https://en.wikipedia.org/wiki/Playfair_cipher) algorithm by
 constructing a key square of size 4\*19 in contrast to standard
-size of 5\*5 and use the [RSA algorithm](https://en.wikipedia.org/wiki/RSA_(cryptosystem))  along with the
+size of 5\*5 and used the [RSA algorithm](https://en.wikipedia.org/wiki/RSA_(cryptosystem))  along with the
 proposed novel technique - RMPS keyless transposition to
 further enhance the security and confidentiality of the
 message.
